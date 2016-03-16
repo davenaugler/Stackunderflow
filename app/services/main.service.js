@@ -18,3 +18,23 @@
         }
     }
 })();
+
+
+(function() {
+'use strict';
+
+    angular
+        .module('Module')
+        .controller('CommentController', ControllerController);
+
+    function ControllerController($scope, $http) {
+        var vm = this;
+        
+
+        activate();
+
+        ////////////////
+
+        function activate() { }
+    }
+})();

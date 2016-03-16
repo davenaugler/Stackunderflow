@@ -20,6 +20,16 @@
             <li ng-repeat="greeting in greetings track by $index">Greeting #{{$index+1}}: {{greeting}}</li>
         </ul>
     </div>
+    
+    <div></div>
+    
+    <div ng-repeat="a in q.answers">
+        {{a.text}}
+        <!--Below is how you call "questionAnswer" from the questionAnswer.js. 
+        For HTML this is how you do it with the dash. -->
+        <question-answer></question-answer>
+        
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
     <script src="app/app.js"></script>
